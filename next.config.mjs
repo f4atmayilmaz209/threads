@@ -3,6 +3,9 @@ const nextConfig = {
     typescript:{
       ignoreBuildErrors:true,
     },
+    serverActions: {
+      bodySizeLimit: '2mb' // Set desired value here
+  },
     experimental: {
       serverActions: true,
       serverComponentsExternalPackages: ["mongoose"],
