@@ -72,7 +72,7 @@ const AccountProfile = ({user,btnTitle}:Props) => {
     }
     const onSubmit=async(values: z.infer<typeof UserValidation>)=> {
         
-
+        console.log("helllooo")
         const blob=values.profile_photo;
         const hasImageChanged=isBase64Image(blob)
 
@@ -83,7 +83,7 @@ const AccountProfile = ({user,btnTitle}:Props) => {
                 values.profile_photo=imgRes[0].url;
             }
         }
-
+        console.log("helllooo1")
         await updateUser({
             userId:user.id,
             username:values.username,
@@ -93,6 +93,7 @@ const AccountProfile = ({user,btnTitle}:Props) => {
             path:pathname
         }           
         )
+        console.log("helllooo2")
         if(pathname==="/profile/edit"){
             router.back()
         }else{
