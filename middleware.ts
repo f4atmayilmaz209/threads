@@ -5,7 +5,6 @@ import {
 
 
 const isProtectedRoute = createRouteMatcher([
-    '/',
     '/api/webhook/clerk',
     ]);
     
