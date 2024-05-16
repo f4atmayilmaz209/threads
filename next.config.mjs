@@ -3,12 +3,12 @@ const nextConfig = {
     typescript:{
       ignoreBuildErrors:true,
     },
-    serverActions: {
-      bodySizeLimit: '12mb' // Set desired value here
-  },
-    experimental: {
+    experimental:{
       serverActions: true,
       serverComponentsExternalPackages: ["mongoose"],
+      serverActions: {
+        bodySizeLimit: '2mb',
+      }
     },
     eslint: {
       // Warning: This allows production builds to successfully complete even if
