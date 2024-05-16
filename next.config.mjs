@@ -8,7 +8,8 @@ const nextConfig = {
       serverComponentsExternalPackages: ["mongoose"],
       serverActions: {
         bodySizeLimit: '100mb',
-      }
+      },
+      allowedOrigins: ['https://threads-git-main-f4atmayilmaz209s-projects.vercel.app', '*.threads-git-main-f4atmayilmaz209s-projects.vercel.app'],
     },
     eslint: {
       // Warning: This allows production builds to successfully complete even if
