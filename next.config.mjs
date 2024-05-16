@@ -4,7 +4,7 @@ const nextConfig = {
       ignoreBuildErrors:true,
     },
     serverActions: {
-      bodySizeLimit: '2mb' // Set desired value here
+      bodySizeLimit: '12mb' // Set desired value here
   },
     experimental: {
       serverActions: true,
