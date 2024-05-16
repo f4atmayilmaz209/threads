@@ -7,7 +7,7 @@ const nextConfig = {
       serverActions: true,
       serverComponentsExternalPackages: ["mongoose"],
       serverActions: {
-        bodySizeLimit: '2mb',
+        bodySizeLimit: '12mb',
       }
     },
     eslint: {
