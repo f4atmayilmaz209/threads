@@ -92,7 +92,7 @@ const ThreadCard=({
                 <Link className="mt-5 flex items-center" href={`/communities/${community.id}`}>
                     <p className="text-subtle-medium text-gray-1">
                         {formatDateString(createdAt)}
-                        - {community.name} Community 
+                        {" "} - {community.name} Community 
                     </p>
                     <Image 
                         src={community.image}
